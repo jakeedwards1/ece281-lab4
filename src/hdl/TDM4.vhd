@@ -93,13 +93,13 @@ begin
 	-- output MUXs
 	o_DATA <= i_D3 when f_sel = "11" else
 			  i_D2 when f_sel = "10" else
-			  i_D1 when f_sel = "01" else
-			  i_D0;
+			  i_D3 when f_sel = "01" else
+			  i_D2;
 			  
 	o_SEL  <=  "0111" when f_sel = "11" else
 			   "1011" when f_sel = "10" else
-			   "1101" when f_sel = "01" else
-			   "1110";
+			   "0111" when f_sel = "01" else
+			   "1011";
 		
 end behavioral;
 
