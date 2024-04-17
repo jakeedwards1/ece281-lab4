@@ -202,6 +202,5 @@ begin
 	
 	-- wire up active-low 7SD anodes (an) as required
 	-- Tie any unused anodes to power ('1') to keep them off
-    an(1 downto 0) <= "11";
 	
 end top_basys3_arch;
